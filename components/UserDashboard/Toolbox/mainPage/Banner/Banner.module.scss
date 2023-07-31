@@ -1,0 +1,49 @@
+.toolbox {
+  &__main {
+    padding: 15px 16px;
+  }
+
+  &__banner {
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    height: 196px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 34px;
+  }
+
+  &__bannerTextBlock {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  &__bannerTitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 64px;
+    color: #ffffff;
+  }
+
+  &__bannerBtn {
+    background-color: #1598ff;
+    border-radius: 4px;
+    padding: 10px 24px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 16px;
+    display: inline-block;
+
+    &:hover,
+    &:active {
+      background-color: var(--orange);
+    }
+  }
+}

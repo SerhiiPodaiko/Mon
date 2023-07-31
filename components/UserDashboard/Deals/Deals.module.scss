@@ -1,0 +1,21 @@
+.deals {
+  width: 100%;
+}
+
+.dealsMain {
+  overflow-y: scroll;
+  height: calc(100vh - (78px + 78px));
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.table {
+  border: 1px solid #e3e3e8;
+  box-shadow: 0 0 30px rgba(161, 145, 243, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 12px 27px 0 27px;
+}

@@ -1,0 +1,65 @@
+.auth {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
+  background: linear-gradient(144.8deg, #070233 10.49%, #2e1d92 44.58%, #ee2924 91.36%);
+  font-family: 'Montserrat', sans-serif;
+  scrollbar-width: none;
+
+  @media (max-width: 992px) {
+    align-items: normal;
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      justify-content: end;
+      padding: 0;
+    }
+  }
+
+  &__robotLine,
+  &__robot {
+    position: absolute;
+  }
+
+  &__robotLine {
+    top: -10px;
+    left: 0;
+  }
+
+  &__robot {
+    right: 0;
+    bottom: -130px;
+
+    @media (max-width: 1200px) {
+      right: -170px;
+    }
+
+    @media (max-width: 992px) {
+      left: 50%;
+    }
+
+    @media (max-width: 900px) {
+      right: -350px;
+    }
+  }
+}

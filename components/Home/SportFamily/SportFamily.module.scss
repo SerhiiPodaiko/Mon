@@ -1,0 +1,342 @@
+.sportFamily {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 110px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    padding-top: 50px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__headTitle {
+    font-weight: 900;
+    font-size: 124px;
+    line-height: 124px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #e6e6eb;
+    z-index: 1;
+
+    @media (max-width: 992px) {
+      font-size: 100px;
+      line-height: 100px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 48px;
+      line-height: 64px;
+      white-space: nowrap;
+    }
+  }
+
+  &__headSubtitle {
+    top: 45px;
+    position: absolute;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    z-index: 4;
+
+    @media (max-width: 902px) {
+      top: 23px;
+      font-size: 28px;
+      line-height: 64px;
+    }
+
+    @media (max-width: 767px) {
+      top: 18px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    span:first-child {
+      color: #ff1700;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 0 75px 120px;
+    background: var(--dark-blue);
+    width: 100%;
+
+    @media (max-width: 1200px) {
+      padding: 0 35px 120px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 16px 100px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 35%;
+      background: var(--white);
+    }
+  }
+
+  &__slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding-top: 300px;
+  }
+
+  &__sliderNavigation {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    bottom: 70px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  :global(.swiper-wrapper) {
+    position: relative;
+  }
+
+  :global(.swiper-button-next) {
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  :global(.swiper-button-prev) {
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  :global(.swiper-pagination) {
+    @media (max-width: 767px) {
+      position: absolute;
+      bottom: 100px;
+    }
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 6px;
+    height: 6px;
+
+    background: #d9d9d9;
+    opacity: 0.72;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    width: 64px;
+    background: var(--red);
+  }
+
+  &__sliderNavigationArrowNext {
+    transform: rotateY(180deg);
+  }
+
+  &__sliderCart {
+    top: -200px;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    min-height: 510px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__sliderCart:hover &__sliderCartWrapper {
+    border: 1px solid var(--red);
+  }
+
+  &__sliderCart:hover {
+    transform: translateY(-10px);
+  }
+
+  &__sliderCartImgWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+      height: 400px;
+      width: 100%;
+
+      @media (max-width: 992px) {
+        object-fit: cover;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(18, 17, 49, 0.8) -2.75%,
+        rgba(18, 17, 49, 0) 39.37%,
+        rgba(18, 17, 49, 0.8) 86.12%
+      );
+    }
+  }
+
+  &__sliderCartSkeleton {
+    height: 400px;
+    width: 100%;
+  }
+
+  &__sliderCartWrapper {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: 0.3s ease-in-out;
+  }
+
+  &__sliderCartWrapperName {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  &__sliderCartWrapperPrice {
+    font-size: 14px;
+
+    strong {
+      font-size: 18px;
+    }
+  }
+
+  &__sliderCartTopBlock {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 26px 18px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__sliderCartTopImg {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: block;
+  }
+
+  &__sliderCartTopCounty {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+    color: var(--white);
+  }
+
+  &__sliderCartTopKingOfSport {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  &__sliderCartTopLine {
+    background-color: var(--white);
+    margin: 0 12px;
+    height: 12px;
+    width: 1px;
+  }
+
+  button:first-child {
+    display: none;
+  }
+
+  &__linkWrapper {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      position: relative;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    height: 60px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    border: 1px solid var(--white);
+    color: var(--dark-blue);
+    z-index: 10;
+
+    @media (max-width: 767px) {
+      position: relative;
+      top: -100px;
+      font-size: 16px;
+      line-height: 24px;
+      background: var(--white);
+      color: var(--dark-blue);
+    }
+
+    &:hover {
+      background: transparent;
+      border: 1px solid #ff1700;
+      color: #ff1700;
+    }
+  }
+
+  &__robot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.infoBlock {
+  background-color: #ffffff;
+  padding: 38px 32px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  margin-bottom: 17px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 15px;
+  }
+}

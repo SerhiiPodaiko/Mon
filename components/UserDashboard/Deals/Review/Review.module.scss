@@ -1,0 +1,310 @@
+.review {
+  border: 1px solid #e3e3e8;
+  box-shadow: 0 0 30px rgba(161, 145, 243, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 27px 0 27px;
+
+  &__leftBlock,
+  &__rightBlock {
+    position: relative;
+    display: flex;
+  }
+
+  &__leftBlock {
+  }
+
+  &__rightBlock {
+    display: flex;
+  }
+
+  &__rightBlockBtn {
+    background: #ff7466;
+    border-radius: 4px;
+    padding: 11px 24px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__logoBlock {
+    height: 55px;
+    width: 55px;
+    margin-right: 24px;
+    position: relative;
+  }
+
+  &__logo {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__textBlock {
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__textBlockBotton {
+    margin-top: 8px;
+    display: flex;
+  }
+
+  &__clock {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 15px;
+  }
+
+  &__span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: #717184;
+  }
+
+  &__btn {
+    margin-left: 25px;
+    cursor: pointer;
+    color: #474747;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 11px 24px;
+    border: 1px solid #dddee1;
+    background: #ffffff;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &_active {
+      color: #ffffff;
+      background: #ff7466;
+    }
+  }
+}
+
+.modal {
+  background: #ffffff;
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.reviewModal {
+  padding: 20px;
+
+  &__closeBlock {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &__closeImg {
+    cursor: pointer;
+  }
+
+  &__mainBlock {
+    padding: 0 35px;
+  }
+
+  &__brandBlock {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+  }
+
+  &__brandImgBlock {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__brandImg {
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__brandTextBlock {
+  }
+
+  &__brandName {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  &__brandSite {
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1598ff;
+  }
+
+  &__subtitleBlock {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitleDate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717184;
+  }
+
+  &__subtitleClock {
+    margin: 0 5px 0 15px;
+  }
+
+  &__subtitleReplySpan {
+    color: #717184;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__title {
+    margin-top: 15px;
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  &__productsBlock {
+    margin-top: 15px;
+  }
+
+  &__products {
+  }
+
+  &__product {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__productImgBlock {
+    border: 1px solid #f6f6fd;
+    border-radius: 15px;
+    width: 79px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  &__productImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__productTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__productCategory {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1598ff;
+  }
+
+  &__productName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 2px;
+    color: #181818;
+  }
+
+  &__productQuantity {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #181818;
+  }
+
+  &__productPrice {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__productsSummary {
+    border-top: 1px solid rgba(141, 143, 158, 0.15);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 74px;
+    padding: 21px 0;
+  }
+
+  &__btnsBlock {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 14px;
+    gap: 25px;
+  }
+
+  &__btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 11px 24px;
+    border: 1px solid #dddee1;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &_active {
+      color: var(--white);
+      background: #ff7466;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__productLeftBlock {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__productRightBlock {
+    display: flex;
+    align-items: center;
+    gap: 74px;
+  }
+}

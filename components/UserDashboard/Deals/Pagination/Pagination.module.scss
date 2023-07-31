@@ -1,0 +1,33 @@
+.table {
+  &__paginationBlock {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 28px 20px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+  }
+
+  &__paginationRightArrow,
+  &__paginationLeftArrow {
+    cursor: pointer;
+  }
+
+  &__paginationLeftArrow {
+    transform: rotate(180deg);
+  }
+
+  &__paginationSpan {
+    margin: 0 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #54577a;
+  }
+
+  &__paginationRightArrow {
+  }
+}

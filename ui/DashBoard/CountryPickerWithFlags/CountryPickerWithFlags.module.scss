@@ -1,0 +1,107 @@
+.dropDownWrapper {
+  position: relative;
+}
+
+.flag {
+  margin-left: 14px;
+  margin-right: 9px;
+}
+
+.checker {
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  height: 44px;
+  //width: 104px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 7px;
+  cursor: pointer;
+
+  .info {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.dropDown {
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 309px;
+  position: absolute;
+  top: 50px;
+  padding: 18px 0;
+  box-shadow: 0 10px 30px rgba(151, 151, 151, 0.3);
+  z-index: 2;
+  max-height: 180px;
+  overflow-x: auto;
+
+  &__toOpenTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  &__toOpenBottom {
+    margin-top: 14px;
+  }
+
+  &__toOpenSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #919499;
+  }
+
+  &__toOpenClose {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &__countyToOpenElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+
+  &__countyToOpenElement:hover &__countyToOpenTick {
+    display: unset;
+  }
+
+  &__countyToOpenLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  &__countyToOpenFlag {
+    margin-right: 16px;
+  }
+
+  &__countyToOpenCounty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__countyToOpenTick {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}

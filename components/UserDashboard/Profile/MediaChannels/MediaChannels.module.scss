@@ -1,0 +1,117 @@
+.mediaChannels {
+  grid-area: mediaChannels;
+  padding: 26px 35px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 17px;
+
+  &__title,
+  &__subTitle {
+    margin-left: 15px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__subTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px;
+    display: block;
+  }
+
+  &__form {
+    margin-top: 15px;
+    border: 1.3px solid rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+    padding: 20px 22px;
+    gap: 10px 20px;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+      'youTube instagram'
+      'twitter tikTok'
+      'facebook twitch';
+  }
+
+  &__option {
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #919499;
+  }
+
+  &__inputBlock {
+    margin-top: 8px;
+    width: 100%;
+    padding: 3px 2px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 4px;
+    height: 44px;
+  }
+
+  &__inputIcon {
+    width: 48px;
+    height: 38px;
+  }
+
+  &__input {
+    padding: 10px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__bottom {
+    margin-top: 25px;
+  }
+
+  &__bottomLabel {
+  }
+
+  &__bottomBlock {
+  }
+
+  &__bottomImg {
+  }
+
+  &__bottomInput {
+  }
+
+  &__youTube {
+    grid-area: youTube;
+  }
+
+  &__instagram {
+    grid-area: instagram;
+  }
+
+  &__twitter {
+    grid-area: twitter;
+  }
+
+  &__tikTok {
+    grid-area: tikTok;
+  }
+
+  &__facebook {
+    grid-area: facebook;
+  }
+
+  &__twitch {
+    grid-area: twitch;
+  }
+
+  &__website {
+  }
+}

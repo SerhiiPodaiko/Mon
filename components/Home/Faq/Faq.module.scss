@@ -1,0 +1,277 @@
+.faq {
+  font-family: 'Montserrat', sans-serif;
+  padding: 100px 0;
+  background: var(--dark-blue);
+
+  @media (max-width: 992px) {
+    padding: 50px 16px 100px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 90px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__headTitle {
+    font-weight: 900;
+    font-size: 124px;
+    line-height: 124px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+
+    @media (max-width: 1100px) {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 80px;
+      line-height: 100px;
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+      font-size: 40px;
+      line-height: 64px;
+      white-space: nowrap;
+    }
+  }
+
+  &__headWrapper {
+    top: 45px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 1100px) {
+      top: 75px;
+    }
+
+    @media (max-width: 992px) {
+      top: 40px;
+    }
+
+    @media (max-width: 767px) {
+      top: 20px;
+      gap: 20px;
+    }
+  }
+
+  &__headWrapperSubtitle {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    z-index: 4;
+
+    @media (max-width: 992px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &__headWrapperLogo {
+    z-index: 4;
+  }
+
+  &__btnsWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    @media (max-width: 767px) {
+      gap: 16px;
+    }
+  }
+
+  &__btnsWrapperBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    gap: 10px;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+
+    &:hover {
+      border: 1px solid #ff1700;
+      color: #ff1700;
+    }
+
+    @media (max-width: 992px) {
+      &:hover {
+        border: none;
+        color: initial;
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 18px 0;
+    }
+  }
+
+  &__btnsWrapperBtnActive {
+    background: var(--white);
+    border: 1px solid var(--white);
+    color: var(--dark-blue);
+
+    &:hover {
+      border: 1px solid var(--white);
+      color: var(--dark-blue);
+    }
+  }
+
+  &__accordion {
+    margin: 100px auto 0;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    div {
+      opacity: 1 !important;
+      transform: translate(0) !important;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 45px;
+    }
+  }
+
+  &__accordionItem {
+    position: relative;
+    padding: 50px 70px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    background: transparent;
+    color: var(--white);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: 50%;
+      margin-top: -23px;
+      height: 46px;
+      width: 5px;
+      display: block;
+      background: #ff1700;
+      transition: 0.3s ease-in-out;
+    }
+
+    @media (max-width: 767px) {
+      padding: 50px 24px;
+    }
+  }
+
+  &__accordionItemActive {
+    border: 1px solid #ff1700;
+
+    &::before {
+      margin-top: -78px;
+      height: 144px;
+    }
+  }
+
+  &__accordionContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__accordionContentWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__accordionList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @media (max-width: 767px) {
+      padding-left: 10px;
+    }
+  }
+
+  &__accordionListItem {
+    padding-left: 7px;
+  }
+
+  &__accordionTitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    @media (max-width: 767px) {
+      max-width: 230px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  &__accordionCollapse {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 30px;
+    max-width: 590px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.72;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__accordionCollapseActive {
+    visibility: visible;
+    position: static;
+  }
+
+  &__accordionArrow {
+    transition: 0.2s ease-in-out;
+    transform: rotate(180deg);
+
+    @media (max-width: 767px) {
+      width: 32px;
+    }
+  }
+
+  :global(.ReactCollapse--collapse) {
+    transition: height 0.5s;
+  }
+}

@@ -1,0 +1,21 @@
+.gallerySlider {
+  font-family: 'Montserrat', sans-serif;
+  padding: 80px 75px;
+  background: var(--white);
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 80px 16px;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background: var(--dark-blue);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+  }
+}

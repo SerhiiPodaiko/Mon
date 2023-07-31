@@ -1,0 +1,129 @@
+.cta {
+  position: relative;
+  padding: 100px 0 180px;
+  background: var(--dark-blue);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    padding: 0 0 220px;
+  }
+
+  &__wrapper {
+    margin: 0 185px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background: var(--red);
+
+    @media (max-width: 1200px) {
+      margin: 0 120px;
+    }
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      padding: 30px 16px 180px;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    color: var(--white);
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    span:last-child {
+      color: var(--dark-blue);
+    }
+  }
+
+  &__subtitle {
+    margin: 45px 0 90px;
+    max-width: 530px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    opacity: 0.9;
+
+    @media (max-width: 767px) {
+      max-width: 295px;
+      margin: 30px 0 60px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__btnWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__btn {
+    width: 430px;
+    padding: 18px;
+    max-width: 440px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-blue);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--red);
+    z-index: 5;
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      border: 1px solid var(--white);
+      background: transparent;
+    }
+  }
+
+  &__robot {
+    max-width: 1383px;
+    display: grid;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: 4;
+
+    @media (max-width: 1400px) {
+      right: -100px;
+    }
+
+    @media (max-width: 1280px) {
+      right: -200px;
+    }
+
+    @media (max-width: 992px) {
+      //right: -1000px;
+    }
+
+    @media (max-width: 767px) {
+      right: 0;
+      bottom: 140px;
+    }
+  }
+}

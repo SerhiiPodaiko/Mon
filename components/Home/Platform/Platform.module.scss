@@ -1,0 +1,243 @@
+.platform {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--dark-blue);
+  color: var(--white);
+  overflow: hidden;
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 125px;
+
+    @media (max-width: 992px) {
+      padding: 0 16px 125px;
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 275px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(149.46deg, #2e1d92 23.13%, #ee2924 92.29%);
+      opacity: 0.1;
+    }
+  }
+
+  &__headTitle {
+    padding-top: 150px;
+    font-weight: 900;
+    font-size: 124px;
+    line-height: 124px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 992px) {
+      font-size: 100px;
+      line-height: 100px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 60px;
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
+
+  &__headWrapper {
+    top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 992px) {
+      top: 190px;
+    }
+
+    @media (max-width: 767px) {
+      top: 80px;
+    }
+  }
+
+  &__headWrapperSubtitle {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white);
+    z-index: 4;
+
+    @media (max-width: 992px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &__headWrapperSubtitle:last-child {
+    color: #ff1700;
+  }
+
+  &__headLogo {
+    z-index: 4;
+  }
+
+  &__headInfo {
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: 767px) {
+      margin-top: 100px;
+      gap: 16px;
+    }
+  }
+
+  &__headInfoSubtitle {
+    max-width: 422px;
+    align-self: start;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.72);
+
+    @media (max-width: 767px) {
+      max-width: 300px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__headInfoTitle {
+    max-width: 375px;
+    align-self: start;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__headRobot {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+  }
+
+  &__content {
+    @media (max-width: 992px) {
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__steps {
+    padding: 110px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @media (max-width: 1300px) {
+      padding: 50px 20px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 100px 70px 0;
+      gap: 36px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 100px 20px 0;
+    }
+  }
+
+  &__stepsWrapper {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 40px;
+
+    @media (max-width: 1300px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 992px) {
+      margin-bottom: 50px;
+      gap: 24px;
+      width: 50%;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__stepsWrapperInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (max-width: 992px) {
+      width: 180px;
+    }
+  }
+
+  &__stepsWrapperInfoTitle {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__stepsWrapperInfoSubtitle {
+    max-width: 200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.72;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    width: 6px;
+    height: 6px;
+
+    background: #d9d9d9;
+    opacity: 0.72;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    width: 64px;
+    background: var(--red);
+  }
+}

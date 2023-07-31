@@ -1,0 +1,134 @@
+.mediaInventory {
+  padding: 40px 75px 100px;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 40px 16px 100px;
+  }
+
+  &__head {
+    margin-bottom: 32px;
+  }
+
+  &__headTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+  }
+
+  &__slider {
+    margin-top: 90px;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+
+    // SLIDER
+    :global(.slick-track) {
+      display: flex !important;
+      justify-content: flex-start !important;
+      gap: 4px;
+    }
+
+    :global(.slick-slide) {
+      max-width: 280px;
+      background: var(--dark-blue) !important;
+      color: var(--white) !important;
+    }
+  }
+
+  &__sliderItem {
+    min-width: 280px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--red);
+      color: var(--white);
+
+      button {
+        background: var(--dark-blue) !important;
+        border: 1px solid var(--dark-blue);
+      }
+    }
+  }
+
+  &__sliderItemTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    opacity: 0.9;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__sliderItemTotal {
+    margin: 8px 0 32px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--red);
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__sliderItemBtn {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    border-radius: 3px;
+    border: 1px solid var(--white);
+    color: var(--white) !important;
+    background: transparent !important;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--white) !important;
+      background: var(--red) !important;
+      border: 1px solid var(-red) !important;
+    }
+  }
+
+  &__sliderItemActive {
+    background: var(--red);
+
+    p {
+      color: var(--dark-blue);
+    }
+  }
+
+  &__sliderItem:hover p {
+    color: var(--dark-blue);
+  }
+
+  //&__sliderItemBtn {
+  //  right: 23px;
+  //  top: 50%;
+  //  position: absolute !important;
+  //  transition: 0.3s ease-in-out;
+  //
+  //  &:hover {
+  //    svg path {
+  //      stroke: var(--red);
+  //      cursor: pointer;
+  //    }
+  //  }
+  //}
+}

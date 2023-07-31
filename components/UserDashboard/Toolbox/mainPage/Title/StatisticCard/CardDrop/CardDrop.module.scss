@@ -1,0 +1,35 @@
+.toolbox {
+  &__pageTitleCartSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4c4d4f;
+    margin-right: 3px;
+  }
+
+  &__pageTitleCartArrow {
+  }
+}
+
+.arrowContainer {
+  display: flex;
+  align-content: center;
+}
+
+.drop {
+  position: absolute;
+  border: 1px solid #f5f5f5;
+  width: 159px;
+  top: 31px;
+  left: -39px;
+  z-index: 9;
+  background: #ffffff;
+
+  .dropItem {
+    padding: 8px 19px;
+  }
+}
+
+.drop .active {
+  background: #1598ff !important;
+}

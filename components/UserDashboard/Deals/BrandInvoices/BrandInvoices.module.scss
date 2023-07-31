@@ -1,0 +1,344 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 25px;
+
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottonLine {
+    border-bottom: 1px solid #cfd1d6;
+  }
+
+  &__statusBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__statusSpan {
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 7px 20px;
+    width: max-content;
+
+    &_todo {
+      background: #1598ff;
+    }
+
+    &_completed {
+      background: #a29bcf;
+    }
+
+    &_request {
+      background: #ff7466;
+    }
+
+    &_cancelled {
+      background: #ff7466;
+    }
+
+    &_error {
+      background: #ff1700;
+    }
+  }
+
+  &__span {
+  }
+
+  &__bottonOption {
+  }
+
+  &__bottonChannels {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottonStatus {
+    text-align: center;
+    width: 150px;
+    border-left: 1px solid rgba(120, 126, 145, 0.3);
+    border-right: 1px solid rgba(120, 126, 145, 0.3);
+  }
+
+  &__bottonBudget {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__bottonPeriod {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__bottonTasks {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__logoBlock {
+    width: 55px;
+    height: 55px;
+    margin-right: 16px;
+    position: relative;
+  }
+
+  &__logo {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__periodBlock {
+    background: #f7f7f7;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 55px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__periodIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+  }
+
+  &__periodSpan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__listBlock {
+  }
+
+  &__listSpan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 141%;
+    display: block;
+  }
+
+  &__itemsBlock {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__leftSub {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rightSub {
+    display: flex;
+    align-items: center;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0 13px 31px;
+    position: relative;
+  }
+
+  &__itemsChannelsBlock {
+    display: flex;
+    align-items: center;
+    width: 406px;
+  }
+
+  &__itemsImgBlock {
+    width: 79px;
+    height: 79px;
+    border: 1px solid #f6f6fd;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    position: relative;
+  }
+
+  &__itemsImg {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  &__itemsChannelsTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__itemsChannelsTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1598ff;
+  }
+
+  &__itemsChannelsSubTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #181818;
+  }
+
+  &__itemsQuantityBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__itemsQuantity {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #181818;
+  }
+
+  &__itemsBudgetBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__itemsBudget {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #181818;
+  }
+
+  &__viewItemsBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__viewItems {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 15px 18px;
+    border: 1px solid #c8c8d0;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__viewItems_active > &__viewItemsArrow {
+    transform: rotate(-90deg);
+  }
+
+  &__viewItemsSpan {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 8px;
+    color: #9c9cab;
+  }
+
+  &__viewItemsArrow {
+    width: 17px;
+    height: 16px;
+    transition: 0.3s;
+    transform: rotate(90deg);
+
+    &_active {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__itemsViewDetailsBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__statusSpanBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__itemsViewDetailsSpan {
+    background: #f8f8fa;
+    border-radius: 4px;
+    padding: 14px 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+
+  &__quantitySpanBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__quantitySpan {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__budgetSpanBlock {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__budgetSpan {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.brand {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(141, 143, 158, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+}

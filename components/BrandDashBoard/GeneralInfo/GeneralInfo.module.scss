@@ -1,0 +1,252 @@
+.organisation {
+  grid-area: organisation;
+  background-color: #ffffff;
+  padding: 38px 32px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  margin-bottom: 17px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 15px;
+  }
+
+  &__block {
+    margin-top: 33px;
+    border: 1.3px solid rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+    padding: 16px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 354px;
+  }
+
+  &__bannerLabel {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__bannerImg {
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__formBanner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px dashed #aba7af;
+    width: 100%;
+    height: 354px;
+
+    &_withImg {
+      border: none;
+    }
+  }
+
+  &__formBannerIcon {
+    width: 40px;
+    height: 33px;
+  }
+
+  &__formBannerSpan {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 12px;
+    color: #343741;
+  }
+
+  &__bannerAvatarBlock {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  &__bannerAvatar {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__bannerAvatarAddBlock {
+    width: 32px;
+    height: 32px;
+    background: #1598ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+  &__bannerAvatarAdd {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__bannerSubTitle {
+    margin: 12px 7px 0 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #919499;
+  }
+
+  &__formTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 14px;
+  }
+
+  &__form {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__element {
+    padding: 9px;
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #919499;
+    display: block;
+  }
+
+  &__input {
+    margin-top: 8px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 10px 11px;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__greyInput {
+    background: #f4f4f4;
+  }
+
+  &__phoneNumberBlock {
+    position: relative;
+    margin-top: 8px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__countyBlock {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    width: 104px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 7px;
+    cursor: pointer;
+  }
+
+  &__flag {
+    margin-left: 26px;
+    margin-right: 14px;
+  }
+
+  &__arrow {
+  }
+
+  &__phoneNumber {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    height: 44px;
+    width: 100%;
+    padding: 11px 12px;
+  }
+
+  &__element {
+  }
+
+  &__locationTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 14px;
+  }
+
+  &__locationBlock {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  &__locationLabel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #919499;
+  }
+
+  &__textarea {
+    margin-top: 8px;
+    width: 100%;
+    min-height: 72px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #919499;
+    padding: 10px 11px;
+  }
+
+  &__symbols {
+    margin-top: 3px;
+    text-align: right;
+    margin-right: 11px;
+    float: right;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #919499;
+  }
+
+  &__locationSecondLabel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #919499;
+    margin-top: 23px;
+    display: block;
+  }
+}

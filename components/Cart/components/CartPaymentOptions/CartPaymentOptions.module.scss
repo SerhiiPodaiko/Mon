@@ -1,0 +1,147 @@
+.payment {
+  align-self: start;
+  padding-bottom: 300px;
+  position: relative;
+  color: var(--dark-blue);
+
+  @media (max-width: 1300px) {
+    flex-basis: 60%;
+  }
+
+  @media (max-width: 992px) {
+    flex-basis: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    top: -60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  &__methods {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__methodsCreditCard {
+    z-index: 2;
+    padding-bottom: 24px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgba(7, 2, 51, 0.4);
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid var(--orange);
+    }
+  }
+
+  &__methodsCreditCardActive {
+    border: 1px solid var(--dark-blue);
+  }
+
+  &__methodsCreditCardTitle {
+    padding: 24px 24px 24px 72px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 24px;
+      border: 3px solid #1598ff;
+      border-radius: 24px;
+    }
+  }
+
+  &__methodsCreditCardCollapse {
+    display: none;
+  }
+
+  &__methodsCreditCardCollapseActive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  &__formGroup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__formLabel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+
+  &__formInput {
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    background: rgba(7, 2, 51, 0.01);
+    border: 0.5px solid rgba(7, 2, 51, 0.64);
+    border-radius: 2px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: capitalize;
+      opacity: 0.64;
+    }
+  }
+}
+
+.cardBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  margin-top: 14px;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.addCardBtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.005em;
+  color: #1598ff;
+}
+
+.addCardBlock {
+  padding: 0 15px;
+}

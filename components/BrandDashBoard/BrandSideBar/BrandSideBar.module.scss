@@ -1,0 +1,176 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 29px;
+  z-index: 10;
+  max-width: 266px;
+  width: 100%;
+  height: auto;
+  background: #0f123f;
+
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+
+    .navButtons {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 50px;
+
+      .active {
+        background: #d1cde7;
+        border-radius: 8px;
+
+        span {
+          color: #0f123f;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+
+      padding: 16px 19px;
+
+      height: 48px;
+      width: 218px;
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      color: #d1cde7;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #d1cde7;
+        color: #0f123f;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .bottomButtons {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+
+      .styledBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: #ffffff;
+
+        padding: 12px 0;
+        background: #ff7466;
+        border-radius: 8px;
+      }
+
+      .divider {
+        width: 212px;
+        height: 1px;
+        background: #e7e6eb80;
+      }
+    }
+  }
+}
+
+.sideBarMinified {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 24px;
+  width: 96px;
+  height: auto;
+  background: #0f123f;
+
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+
+    .navButtons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 70px;
+
+      .active {
+        background: #d1cde7;
+        border-radius: 8px;
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      color: #d1cde7;
+      transition: 0.3s ease;
+      border-radius: 8px;
+
+      &:hover {
+        background: #d1cde7;
+        color: #0f123f;
+      }
+    }
+
+    .bottomButtons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .styledBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+
+        background: #ff7466;
+        border-radius: 8px;
+      }
+
+      .divider {
+        width: 48px;
+        height: 1px;
+        background: #e7e6eb80;
+      }
+
+      .skip {
+        rotate: 180deg;
+      }
+    }
+  }
+}
+
+.avatarBlock {
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatarImg {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}

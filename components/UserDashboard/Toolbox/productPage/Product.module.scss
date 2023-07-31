@@ -1,0 +1,14 @@
+.toolbox {
+  width: 100%;
+}
+
+.toolboxMain {
+  overflow-y: scroll;
+  height: calc(100vh - (78px + 78px));
+  scroll-behavior: smooth;
+  margin: 19px 16px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

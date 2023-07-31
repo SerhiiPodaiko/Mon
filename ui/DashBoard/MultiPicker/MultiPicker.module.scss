@@ -1,0 +1,155 @@
+.organisation {
+  &__locationInputBlock {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  &__locationInput {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    color: #919499;
+    user-select: none;
+  }
+
+  &__locationInputImg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__locations {
+    margin-top: 11px;
+    display: flex;
+  }
+
+  &__locationBlock {
+    margin-right: 10px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    display: flex;
+  }
+
+  &__locationSpanBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__locationSpan {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #979797;
+    margin: auto 16px;
+  }
+
+  &__locationImgBlock {
+    padding: 3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #979797;
+    cursor: pointer;
+  }
+
+  &__locationImg {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__countyBlockToOpen {
+    max-height: 220px;
+    overflow-x: auto;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 309px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 10;
+    padding: 18px 0;
+    box-shadow: 0 10px 30px rgba(151, 151, 151, 0.3);
+  }
+
+  &__countyToOpenTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  &__countyToOpenSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #919499;
+  }
+
+  &__countyToOpenClose {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &__countyToOpenBottom {
+    margin-top: 14px;
+  }
+
+  &__countyToOpenElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+
+  &__countyToOpenElement_Selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #f4f4f4;
+  }
+
+  &__countyToOpenElement_Selected &__countyToOpenTick {
+    display: unset;
+  }
+
+  &__countyToOpenLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  &__countyToOpenFlag {
+    margin-right: 16px;
+  }
+
+  &__countyToOpenCounty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__countyToOpenTick {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}

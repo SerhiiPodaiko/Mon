@@ -1,0 +1,21 @@
+:root {
+  --default-color: #474747;
+  --dark: #000000;
+  --white: #ffffff;
+  --silver: #bbbbbb;
+  --gray: #333333;
+  --blue: #1598ff;
+  --dark-blue: #070233;
+  --orange: #ff7466;
+  --red: #ff1700;
+  --violet: #7468b6;
+
+  /*  RGBA */
+  --bg-white: rgba(255, 255, 255, 0.76);
+  --bg-dark-blue: rgba(7, 2, 51, 0.8);
+
+  /*  SHADOWS  */
+
+  /* TOASTIFY */
+  --toastify-z-index: 999999999;
+}

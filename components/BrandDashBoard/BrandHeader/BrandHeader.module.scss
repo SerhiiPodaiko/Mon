@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 0 71px 0 30px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid #c4c4c480;
+  z-index: 99999;
+
+  &__links {
+    display: flex;
+    gap: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    & a:hover {
+      color: var(--orange);
+    }
+  }
+
+  &__profileContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__profileNutImg {
+    display: block;
+    margin: auto;
+  }
+
+  &__divider {
+    height: 40px;
+    width: 1px;
+    background: #474747;
+    margin-left: 23px;
+    margin-right: 29px;
+    opacity: 0.2;
+  }
+
+  &__profile {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+
+  &__imgBlock {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__img {
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__spanTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__spanSubtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.016em;
+    opacity: 0.5;
+    margin-top: 2px;
+  }
+}

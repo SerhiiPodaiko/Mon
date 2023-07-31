@@ -1,0 +1,262 @@
+.payments {
+  &__titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__titleSpan {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+  }
+
+  &__titleSpanLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__titleSpanLeftIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__titleSpanLeftSpan {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    color: #1598ff;
+  }
+
+  &__actualPaymentsBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    margin-top: 14px;
+    gap: 15px;
+  }
+
+  &__addPaymentsBlock {
+    position: relative;
+    background: #f4f4f4;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 14px;
+  }
+
+  &__addPaymentsTitleBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__addPaymentsTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsTypesBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__addPaymentsOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  &__addPaymentsOptionLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 200px;
+  }
+
+  &__addPaymentsOptionTitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsOptionSubTitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsOptionRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 336px;
+    gap: 20px;
+
+    input {
+      outline: transparent;
+      border-color: transparent;
+    }
+  }
+
+  &__addPaymentsOptionInputBlock {
+    min-width: 68px;
+    width: 100%;
+    background: var(--white);
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 16px 17px;
+    height: 48px;
+  }
+
+  &__addPaymentsOptionInputIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__addPaymentsOptionInput {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__addPaymentsOptionLine {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__addPaymentsOptionDateBlock {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__addPaymentsOptionCvvBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__addPaymentsOptionCvvTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contactEmail {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    background: #f4f4f4;
+    border: 0.388451px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    margin-top: 17px;
+  }
+
+  &__contactEmailLeftBlock {
+    width: 40px;
+  }
+
+  &__contactEmailCircleBlock {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_active {
+      border: 2px solid #1598ff;
+    }
+  }
+
+  &__contactCircle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: transparent;
+
+    &_active {
+      background: #1598ff;
+    }
+  }
+
+  &__contactEmailTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contactEmailTitle {
+    font-weight: 500;
+    font-size: 12.4304px;
+    line-height: 19px;
+  }
+
+  &__contactEmailSubTitle {
+    font-weight: 400;
+    font-size: 12.4304px;
+    line-height: 19px;
+  }
+
+  &__buttomBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  &__defaultWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input[type='checkbox'] {
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+  }
+
+  &__defaultCheckBox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #474747;
+  }
+
+  &__submitBtn {
+    background-color: #1598ff;
+    border-radius: 4px;
+    padding: 8px 49px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 148%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: var(--orange);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+
+  .label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    color: #919499;
+  }
+
+  .input {
+    margin-top: 8px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 9px 11px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    color: #474747;
+
+    mix-blend-mode: normal;
+    opacity: 0.64;
+  }
+
+  .hideBtn {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    top: 40px;
+  }
+}

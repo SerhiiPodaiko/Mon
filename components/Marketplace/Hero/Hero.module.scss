@@ -1,0 +1,239 @@
+.hero {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  &__img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  &__wrapper {
+    top: 160px;
+    position: absolute;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    color: var(--white);
+    z-index: 10;
+
+    @media (max-width: 767px) {
+      top: 80px;
+      height: calc(50vh - 50px);
+      padding: 0 16px;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+      font-size: 56px;
+      line-height: 64px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    span:first-child {
+      @media (max-width: 767px) {
+        white-space: nowrap;
+      }
+    }
+
+    span:last-child {
+      color: #ff1700;
+    }
+  }
+
+  &__subtitle {
+    max-width: 480px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    opacity: 0.9;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0;
+    width: 266px;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--white);
+    transition: 0.3s ease-in;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:hover {
+      border: 1px solid #ff1700;
+      color: #ff1700;
+
+      svg path {
+        stroke: #ff1700;
+        transform: translateY(4px);
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+
+  // SEARCH
+  &__search {
+    max-width: 1070px;
+    bottom: 70px;
+    position: absolute;
+    width: 100%;
+    padding: 16px 64px 48px;
+    background: var(--white);
+    box-shadow: 0px -12px 40px rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+
+    @media (max-width: 1200px) {
+      max-width: 890px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 16px;
+      max-width: 750px;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 0;
+      height: 45vh;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 50px;
+    gap: 12px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        @media (max-width: 992px) {
+          grid-column: 1 / span 3;
+        }
+      }
+    }
+
+    &__label {
+      align-self: start;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: var(--dark-blue);
+      opacity: 0.9;
+    }
+
+    &__input {
+      font-family: 'Montserrat', 'sans-serif';
+      height: 48px;
+      padding: 12px 16px;
+      background: rgba(7, 2, 51, 0.01);
+      border: 0.5px solid rgba(7, 2, 51, 0.64);
+      border-radius: 2px;
+      color: var(--dark-blue);
+      outline: none;
+      transition: 0.3s ease-in-out;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 0.64;
+
+      &:focus {
+        border: 0.5px solid #ff1700;
+      }
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--dark-blue);
+        opacity: 0.4;
+      }
+    }
+
+    &__btn {
+      margin-top: 32px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.5px solid var(--dark-blue);
+      border-radius: 2px;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      @media (max-width: 992px) {
+        margin-top: 15px;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: 15px;
+      }
+
+      &:hover {
+        background: #ff1700;
+        border: none;
+        opacity: 0.7;
+        border-radius: 10px;
+
+        @media (max-width: 992px) {
+          opacity: 1;
+          background: var(--white);
+        }
+
+        svg path {
+          transition: 0.1s ease-in-out;
+          stroke: var(--white);
+
+          @media (max-width: 992px) {
+            stroke: var(--dark-blue);
+          }
+        }
+      }
+    }
+  }
+}

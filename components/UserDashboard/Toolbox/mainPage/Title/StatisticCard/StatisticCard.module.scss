@@ -1,0 +1,46 @@
+.toolbox {
+  &__pageTitleCart {
+    padding: 17px 20px;
+    background: #f8f8fa;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+  }
+
+  &__pageTitleCartTop {
+    display: flex;
+    align-items: center;
+  }
+
+  &__pageTitleCartImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  &__pageTitleCartTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding-left: 10px;
+  }
+
+  &__pageTitleCartBottom {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__pageTitleCartSum {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &__pageTitleCartBtn {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}

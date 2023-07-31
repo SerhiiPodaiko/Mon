@@ -1,0 +1,412 @@
+.mainContent {
+  padding: 20px 16px 0 16px;
+  display: grid;
+  grid-template-areas:
+    'infoBlock generalSettings'
+    'infoBlock paymentOptions';
+  grid-auto-columns: max-content auto;
+}
+
+.infoBlock {
+  grid-area: infoBlock;
+  background-color: #ffffff;
+  padding: 38px 32px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 372px;
+  align-self: start;
+  margin-right: 17px;
+
+  &__rightBlock {
+    overflow-y: scroll;
+    height: calc(100vh - (78px + 79px + 20px));
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+  }
+
+  &__optionIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  &__optionText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.infoOption {
+  &__container {
+    margin-top: 33px;
+    border: 1.3px solid rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+    padding: 16px 22px;
+  }
+
+  &__smallContainer {
+    margin-top: 19px;
+    border: 1.3px solid rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+    padding: 16px 22px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.anyPayments {
+  &__addPaymentBlock {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__addPaymentLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(21, 152, 255, 0.1);
+    border: 1px solid #1598ff;
+    border-radius: 4px;
+  }
+
+  &__addPaymentLeftIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__addPaymentRight {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1598ff;
+    border: 1px solid #1598ff;
+    border-radius: 4px;
+    padding: 16px;
+    gap: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  &__addPaymentRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__addPaymentRightSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    color: var(--white);
+  }
+}
+
+.payments {
+  &__titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__titleSpan {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+  }
+
+  &__titleSpanLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__titleSpanLeftIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__titleSpanLeftSpan {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    color: #1598ff;
+  }
+
+  &__actualPaymentsBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    margin-top: 14px;
+    gap: 15px;
+  }
+
+  &__addPaymentsBlock {
+    position: relative;
+    background: #f4f4f4;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 14px;
+  }
+
+  &__addPaymentsTitleBlock {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__addPaymentsTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsTypesBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__addPaymentsOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  &__addPaymentsOptionLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 200px;
+  }
+
+  &__addPaymentsOptionTitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsOptionSubTitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__addPaymentsOptionRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 336px;
+    gap: 20px;
+  }
+
+  &__addPaymentsOptionInputBlock {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background: var(--white);
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 16px 17px;
+    height: 48px;
+  }
+
+  &__addPaymentsOptionInputIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__addPaymentsOptionInput {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__addPaymentsOptionLine {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__addPaymentsOptionDateBlock {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__addPaymentsOptionCvvBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__addPaymentsOptionCvvTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contactEmail {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    background: #f4f4f4;
+    border: 0.388451px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    margin-top: 17px;
+  }
+
+  &__contactEmailLeftBlock {
+    width: 40px;
+  }
+
+  &__contactEmailCircleBlock {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_active {
+      border: 2px solid #1598ff;
+    }
+  }
+
+  &__contactCircle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: transparent;
+
+    &_active {
+      background: #1598ff;
+    }
+  }
+
+  &__contactEmailTextBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contactEmailTitle {
+    font-weight: 500;
+    font-size: 12.4304px;
+    line-height: 19px;
+  }
+
+  &__contactEmailSubTitle {
+    font-weight: 400;
+    font-size: 12.4304px;
+    line-height: 19px;
+  }
+}
+
+.form {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  gap: 19px 21px;
+  grid-template-areas:
+    'countries countries2'
+    'currentPassword currentPassword'
+    'newPassword newPassword'
+    'confirmPassword confirmPassword';
+}
+
+.countriesBlock {
+  grid-area: countries;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: #1598ff;
+  border-radius: 4px;
+  padding: 8px 49px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 148%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: var(--orange);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #919499;
+}
+
+//.stripeCustom {
+//  * {
+//    color: red !important;
+//  }
+//
+//  > #root > form > div > div.CardField-input-wrapper > span.CardField-number.CardField-child > span:nth-child(2) > div > div.CardNumberField-input-wrapper > span > input {
+//    display: flex;
+//    align-items: center;
+//    width: 100%;
+//    gap: 10px;
+//    background: var(--white);
+//    border: 1px solid rgba(196, 196, 196, 0.5);
+//    border-radius: 8px;
+//    padding: 16px 17px;
+//    height: 48px;
+//  }
+//}

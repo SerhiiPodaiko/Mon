@@ -1,0 +1,60 @@
+.table {
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  &__topLine {
+    border-bottom: 2px solid #cfd1d6;
+  }
+
+  &__topLineLeft {
+  }
+
+  &__topLineRight {
+    display: flex;
+    align-items: center;
+  }
+
+  &__topOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__topSpan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: block;
+    color: #84829a;
+    opacity: 0.9;
+  }
+
+  &__topChannels {
+    width: 450px;
+    justify-content: flex-start;
+  }
+
+  &__topStatus {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__topQuantity {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__topBudget {
+    text-align: center;
+    width: 150px;
+  }
+
+  &__topView {
+    text-align: center;
+    width: 150px;
+  }
+}

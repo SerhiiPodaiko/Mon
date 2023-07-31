@@ -1,0 +1,286 @@
+.personalInformation {
+  grid-area: personalInformation;
+  background-color: #ffffff;
+  padding: 38px 32px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+  border-radius: 8px;
+  margin-bottom: 17px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 15px;
+  }
+
+  &__form {
+    margin-top: 33px;
+    border: 1.3px solid rgba(196, 196, 196, 0.5);
+    border-radius: 15px;
+    padding: 16px 22px;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    gap: 19px 21px;
+    grid-template-areas:
+      'bannerImg bannerImg'
+      'firstName lastName'
+      'role discipline'
+      'email phoneNumber'
+      'datepicker gender'
+      'language language'
+      'location location';
+  }
+
+  &__option {
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    color: #919499;
+  }
+
+  &__input {
+    margin-top: 8px;
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 9px 11px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__whiteInput {
+  }
+
+  &__greyInput {
+    background-color: #f4f4f4;
+  }
+
+  &__datepicker {
+    height: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #919499;
+  }
+
+  &__countyBlock,
+  &__phoneNumber {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 9px 11px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__countyBlock {
+    height: 44px;
+    width: 104px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 7px;
+    cursor: pointer;
+  }
+
+  &__flag {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  &__arrow {
+  }
+
+  &__phoneNumber {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 9px 11px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__phoneNumberBigBlock {
+  }
+
+  &__formBannerBlock {
+    grid-area: bannerImg;
+  }
+
+  &__firstNameBlock {
+    grid-area: firstName;
+  }
+
+  &__lastNameBlock {
+    grid-area: lastName;
+  }
+
+  &__roleBlock {
+    grid-area: role;
+  }
+
+  &__datepickerBlock {
+    grid-area: datepicker;
+  }
+
+  &__emailBlock {
+    grid-area: email;
+  }
+
+  &__phoneNumberBlock {
+    position: relative;
+    margin-top: 8px;
+    display: flex;
+    grid-area: phoneNumber;
+  }
+
+  &__countyBlockToOpen {
+    border: 1px solid rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 309px;
+    position: absolute;
+    top: 50px;
+    padding: 18px 0;
+    box-shadow: 0 10px 30px rgba(151, 151, 151, 0.3);
+
+    max-height: 180px;
+    overflow-x: auto;
+  }
+
+  &__countyToOpenTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  &__countyToOpenSpan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #919499;
+  }
+
+  &__countyToOpenClose {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &__countyToOpenBottom {
+    margin-top: 14px;
+  }
+
+  &__countyToOpenElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+
+  &__countyToOpenElement:hover &__countyToOpenTick {
+    display: unset;
+  }
+
+  &__countyToOpenLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  &__countyToOpenFlag {
+    margin-right: 16px;
+  }
+
+  &__countyToOpenCounty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__countyToOpenTick {
+    display: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &__disciplineBlock {
+    grid-area: discipline;
+  }
+
+  &__genderBlock {
+    grid-area: gender;
+  }
+
+  &__languagesBlock {
+    position: relative;
+    grid-area: language;
+  }
+
+  &__locationBlock {
+    grid-area: location;
+  }
+
+  &__formBanner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f3f7;
+    border-radius: 4px;
+    width: 100%;
+    height: 204px;
+    overflow: hidden;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px dashed #aba7af;
+
+    &_withImg {
+      border: none;
+    }
+  }
+
+  &__formBannerIcon {
+    width: 40px;
+    height: 33px;
+  }
+
+  &__formBannerSpan {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 12px;
+    color: #343741;
+  }
+
+  &__formBannerUnderSpan {
+    display: block;
+    margin-top: 12px;
+    font-weight: 400;
+    color: #919499;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__formBannerImg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}

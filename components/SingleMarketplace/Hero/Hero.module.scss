@@ -1,0 +1,239 @@
+.hero {
+  margin-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--white);
+
+  @media (max-width: 992px) {
+    margin-top: 50px;
+  }
+
+  &__banner {
+    display: flex;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &__bannerImage {
+    width: 100%;
+    height: 446px;
+  }
+
+  &__content {
+    padding: 32px 75px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
+    @media (max-width: 1300px) {
+      padding: 32px 50px 0;
+      grid-template-columns: 3fr 1fr;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 40px;
+
+    @media (max-width: 1300px) {
+      gap: 20px;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__infoAvatar {
+    width: 280px;
+    position: relative;
+    height: 240px;
+
+    @media (max-width: 992px) {
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100px;
+    }
+  }
+
+  &__infoAvatarImage {
+    position: absolute;
+    top: -130px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 265px;
+    height: 265px;
+    border: 15px solid var(--white);
+
+    @media (max-width: 992px) {
+      top: -100px;
+      width: 185px;
+      height: 185px;
+    }
+  }
+
+  &__infoSkeleton {
+    display: inline-block;
+    position: absolute;
+    top: -120px;
+    width: 265px;
+    height: 265px;
+    border-radius: 100%;
+  }
+
+  &__infoUser {
+    display: flex;
+    flex-direction: column;
+    color: #1b1b1b;
+
+    @media (max-width: 992px) {
+    }
+  }
+
+  &__infoUserHead {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--dark-blue);
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__infoUserWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media (max-width: 992px) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__infoUserName {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__infoUserNation {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    span {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      line-height: 24px;
+      text-transform: capitalize;
+      mix-blend-mode: normal;
+      opacity: 0.64;
+    }
+  }
+
+  &__infoUserQualification {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+    color: var(--dark-blue);
+  }
+
+  &__infoUserYears {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+    color: var(--dark-blue);
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    align-items: end;
+    gap: 32px;
+
+    @media (max-width: 992px) {
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__linksBtn {
+    padding: 18px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 1300px) {
+      padding: 18px 30px;
+    }
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    &:hover {
+      background: transparent;
+      border: 1px solid var(--dark-blue);
+      color: var(--dark-blue);
+    }
+  }
+
+  &__linksSocialWrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__linksSocialWrapperItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 100%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    line-height: 0;
+
+    svg path {
+      stroke: var(--dark-blue);
+    }
+
+    &:hover {
+      transform: scale(1.2) rotate(360deg);
+      background: var(--dark-blue);
+
+      svg path {
+        stroke: var(--white);
+      }
+    }
+  }
+}

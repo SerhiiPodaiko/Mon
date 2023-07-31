@@ -1,0 +1,38 @@
+.toolbox {
+  &__pageTitleBlock {
+    background-color: #fff;
+    padding: 15px 16px;
+  }
+
+  &__pageTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__pageTitle {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    color: #474747;
+    letter-spacing: -0.022em;
+  }
+
+  &__pageBtn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    color: #ffffff;
+    padding: 8px 13px;
+    background: #1598ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+}

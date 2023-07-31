@@ -1,0 +1,17 @@
+.toolbox {
+  &__pageTitleCarts {
+    display: grid;
+    gap: 19px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+    padding: 0 16px 15px 16px;
+    margin-bottom: 20px;
+  }
+
+  &__pageTitleCartImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}

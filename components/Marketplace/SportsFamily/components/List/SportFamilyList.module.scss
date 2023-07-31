@@ -1,0 +1,243 @@
+.list {
+  padding: 0 75px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 32px;
+  background: var(--dark-blue);
+  position: relative;
+
+  @media (max-width: 1350px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 36px;
+    gap: 36px 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__emptyTitle {
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    font-size: 40px;
+    color: var(--red);
+    text-align: center;
+    top: -150px;
+    left: 50%;
+    margin-left: -250px;
+    border: 2px solid var(--red);
+    border-radius: 6px;
+  }
+
+  &__cart {
+    top: -200px;
+    position: relative;
+    min-height: 510px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 5;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__cart:hover &__cartWrapper {
+    border: 1px solid var(--red);
+  }
+
+  &__cart:hover {
+    transform: translateY(-10px);
+  }
+
+  &__cartImgWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+      height: 400px;
+      width: 100%;
+
+      @media (max-width: 992px) {
+        object-fit: cover;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(18, 17, 49, 0.8) -2.75%,
+        rgba(18, 17, 49, 0) 39.37%,
+        rgba(18, 17, 49, 0.8) 86.12%
+      );
+    }
+  }
+
+  &__cartSkeleton {
+    height: 400px;
+    width: 100%;
+  }
+
+  &__cartWrapper {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: 0.3s ease-in-out;
+  }
+
+  &__cartFavorites {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    z-index: 10;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__cartWrapperName {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  &__cartWrapperPrice {
+    font-size: 14px;
+
+    strong {
+      font-size: 18px;
+    }
+  }
+
+  &__cartTopBlock {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    padding: 26px 18px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__cartTopImg {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: block;
+  }
+
+  &__cartTopCounty {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+    color: var(--white);
+  }
+
+  &__cartTopKingOfSport {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  &__cartTopLine {
+    background-color: var(--white);
+    margin: 0 12px;
+    height: 12px;
+    width: 1px;
+  }
+}
+
+.btnLoadWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: var(--dark-blue);
+}
+
+.btnLoad {
+  font-family: 'Montserrat', 'sans-serif';
+  position: relative;
+  top: -90px;
+  margin: 0 auto;
+  width: 195px;
+  padding: 18px 0;
+  justify-content: center;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  background: var(--white);
+  transition: 0.3s ease-in-out;
+  border-radius: 3px;
+
+  @media (max-width: 767px) {
+    max-width: 175px;
+  }
+
+  &:hover {
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+
+    svg path {
+      transform: translateY(4px);
+      transition: 0.3s ease-in-out;
+      stroke: var(--red);
+    }
+
+    @media (max-width: 992px) {
+      border: 1px solid var(--white);
+      background: var(--white);
+      color: var(--dark-blue);
+
+      svg path {
+        stroke: var(--dark-blue);
+      }
+    }
+  }
+}

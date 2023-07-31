@@ -1,0 +1,139 @@
+.error {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', 'sans-serif';
+  background: var(--dark-blue);
+  overflow-y: auto;
+
+  &__content {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: #181818;
+    z-index: 5;
+    overflow: hidden;
+
+    @media (max-width: 992px) {
+      justify-content: space-between;
+      padding: 170px 35px 50px;
+      height: 100%;
+    }
+
+    @media (max-width: 767px) {
+      padding: 170px 16px 50px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 72px;
+    letter-spacing: 0.04em;
+    color: var(--white);
+
+    strong {
+      color: var(--red);
+    }
+
+    @media (max-width: 992px) {
+      max-width: 373px;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 277px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &__number {
+    font-weight: 900;
+    font-size: 300px;
+    line-height: 320px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #1f194b;
+
+    @media (max-width: 992px) {
+      font-size: 160px;
+      line-height: 140px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 132px;
+    }
+  }
+
+  &__robot {
+    top: 60%;
+    right: 0;
+    position: absolute;
+    margin-top: -131px;
+
+    @media (max-width: 1200px) {
+      right: -140px;
+    }
+
+    @media (max-width: 992px) {
+      right: 0;
+    }
+
+    @media (max-width: 660px) {
+      right: -120px;
+    }
+
+    @media (max-width: 470px) {
+      right: -230px;
+    }
+  }
+
+  &__link {
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    background: var(--white);
+    border-radius: 2px;
+    z-index: 100;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: 0.2s ease;
+
+    &:hover {
+      color: var(--red);
+      border: 1px solid var(--red);
+      background: transparent;
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+      display: flex;
+      padding: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      background: var(--white);
+      border-radius: 2px;
+      text-decoration: none;
+      color: var(--dark-blue);
+    }
+  }
+}
